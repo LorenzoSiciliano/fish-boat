@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { FishesComponent } from './fishes/fishes.component';
+import { FishService } from './fish.service';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { FishesComponent } from './fishes/fishes.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [FishService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

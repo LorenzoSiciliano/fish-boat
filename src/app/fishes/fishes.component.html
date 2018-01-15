@@ -1,3 +1,8 @@
-<p>
-  fishes works!
-</p>
+<h2>Pesci pescati</h2>
+<ul class="fishes">
+  <li *ngFor="let fish of fishes">
+    <a routerLink="/detail/{{fish.id}}">
+      <img src="./img/{{fish.breed}}.png">
+    </a>
+  </li>
+</ul>
