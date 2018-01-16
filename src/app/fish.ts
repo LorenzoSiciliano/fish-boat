@@ -1,5 +1,6 @@
 export class Fish {
+  id: number;
   breed: string;
-  length: number;
-  weight: number;
+  length: string;
+  weight: string;
 }
