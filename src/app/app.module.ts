@@ -8,11 +8,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { AppRoutingModule } from './/app-routing.module';
+import { FishDetailComponent } from './fish-detail/fish-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FishesComponent
+    FishesComponent,
+    FishDetailComponent
   ],
   imports: [
     BrowserModule,
