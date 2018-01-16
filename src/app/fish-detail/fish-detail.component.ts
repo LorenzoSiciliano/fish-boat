@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FishDetailComponent implements OnInit {
 
   constructor() { }
-
+//sono un commento
   ngOnInit() {
   }
 
