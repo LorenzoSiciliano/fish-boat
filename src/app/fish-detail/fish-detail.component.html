@@ -1,3 +1,11 @@
-<p>
-  fish-detail works!
-</p>
+<div *ngIf="fish">
+
+  <h2>{{ fish.breed | uppercase }} Details</h2>
+  <div><span>id: </span>{{fish.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="fish.breed" placeholder="breed"/>
+    </label>
+  </div>
+
+</div>
