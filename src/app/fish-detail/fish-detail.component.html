@@ -1,8 +1,5 @@
 <div *ngIf="fish">
-  <h2>Dettagli {{ fish.breed | uppercase }}</h2>
-  <div class="fish-detail">
-    <span>id: </span>{{fish.id}}
-  </div>
+  <h2>Dettagli {{fish.breed}}</h2>
   <div class="fish-detail">
     <label>Razza:
       <input [(ngModel)]="fish.breed" placeholder="breed"/>
@@ -18,5 +15,5 @@
       <input [(ngModel)]="fish.length" placeholder="length"/>
     </label>
   </div>
-  <button (click)="save()">save</button>
+  <button (click)="save()">Salva</button>
 </div>

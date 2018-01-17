@@ -15,14 +15,12 @@ export class FishesComponent implements OnInit {
     this.fishService.getFishes().subscribe(fishes => this.fishes = fishes);
   }
 
-  selectedFish: Fish;
-
-onSelect(fish: Fish): void {
-  this.selectedFish = fish;
-}
-
   ngOnInit() {
     this.getFishes();
   }
-
+  
+  delete(fish: Fish): void {
+    this.fishes = this.fishes.filter(f => f !== fish);
+    this.fishService.deleteFish(fish).subscribe();
+  }
 }

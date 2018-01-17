@@ -1,10 +1,15 @@
 <h2>Pesci pescati</h2>
 <ul class="fishes">
-  <li *ngFor="let fish of fishes"
-  (click)="onSelect(fish)">
+  <li *ngFor="let fish of fishes">
     <a routerLink="/detail/{{fish.id}}">
       <img [src]="fish.img">
     </a>
+    <button class="delete" title="delete fish"
+    (click)="delete(fish)">x</button>
   </li>
 </ul>
-<app-fish-detail [fish]="selectedFish"></app-fish-detail>
+<a routerLink="/addFish">
+  <button>
+    Aggiungi un pesce
+  </button>
+</a>

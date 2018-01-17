@@ -1,0 +1,14 @@
+<div>
+  <label>Razza:
+    <input #fishBreed />
+  </label>
+  <label>Peso:
+    <input #fishWeight />
+  </label>
+  <label>Lunghezza:
+    <input #fishLength />
+  </label>
+  <button (click)="add(fishBreed.value,fishWeight.value,fishLength.value); fishBreed.value='';fishWeight.value='';fishLength.value=''">
+    Aggiungi
+  </button>
+</div>

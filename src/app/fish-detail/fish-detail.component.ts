@@ -18,10 +18,10 @@ export class FishDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.getHero();
+    this.getFish();
   }
 
-  getHero(): void {
+  getFish(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.fishService.getFish(id)
       .subscribe(fish => this.fish = fish);
