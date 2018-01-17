@@ -15,7 +15,7 @@ export class FishService {
   constructor(
     private http: HttpClient) { }
 
-  private fishesUrl = 'api/Fishes';
+  private fishesUrl = 'api/fishes';
 
   getFishes (): Observable<Fish[]> {
   return this.http.get<Fish[]>(this.fishesUrl)

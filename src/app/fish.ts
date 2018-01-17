@@ -3,4 +3,5 @@ export class Fish {
   breed: string;
   length: string;
   weight: string;
+  img: string;
 }
