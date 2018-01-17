@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Fish } from '../fish';
 
 @Component({
   selector: 'app-fish-detail',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fish-detail.component.css']
 })
 export class FishDetailComponent implements OnInit {
-
+  @Input() fish: Fish;
   constructor() { }
 
   ngOnInit() {

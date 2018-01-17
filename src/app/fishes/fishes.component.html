@@ -1,8 +1,10 @@
 <h2>Pesci pescati</h2>
 <ul class="fishes">
-  <li *ngFor="let fish of fishes">
+  <li *ngFor="let fish of fishes"
+  (click)="onSelect(fish)">
     <a routerLink="/detail/{{fish.id}}">
       <img [src]="fish.img">
     </a>
   </li>
 </ul>
+<app-fish-detail [fish]="selectedFish"></app-fish-detail>
