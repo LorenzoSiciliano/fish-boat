@@ -1,11 +1,21 @@
 <div *ngIf="fish">
-
   <h2>{{ fish.breed | uppercase }} Details</h2>
-  <div><span>id: </span>{{fish.id}}</div>
-  <div>
-    <label>name:
+  <div class="fish-detail">
+    <span>id: </span>{{fish.id}}
+  </div>
+  <div class="fish-detail">
+    <label>breed:
       <input [(ngModel)]="fish.breed" placeholder="breed"/>
     </label>
   </div>
-
+  <div class="fish-detail">
+    <label>weight:
+      <input [(ngModel)]="fish.weight" placeholder="weight"/>
+    </label>
+  </div>
+  <div class="fish-detail">
+    <label>length:
+      <input [(ngModel)]="fish.length" placeholder="length"/>
+    </label>
+  </div>
 </div>
