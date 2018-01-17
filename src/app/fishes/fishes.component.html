@@ -2,7 +2,7 @@
 <ul class="fishes">
   <li *ngFor="let fish of fishes">
     <a routerLink="/detail/{{fish.id}}">
-      <img src="./img/{{fish.breed}}.png">
+      <img [src]="fish.img">
     </a>
   </li>
 </ul>
