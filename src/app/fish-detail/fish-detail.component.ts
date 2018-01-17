@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Fish } from '../fish';
 
 @Component({
@@ -7,7 +7,7 @@ import { Fish } from '../fish';
   styleUrls: ['./fish-detail.component.css']
 })
 export class FishDetailComponent implements OnInit {
-   @Input() fish: Fish;
+  @Input() fish: Fish;
   constructor() { }
 //sono un commentooo
   ngOnInit() {
