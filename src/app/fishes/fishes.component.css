@@ -1,0 +1,14 @@
+.delete{
+  background-color: #660033;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px 10px 10px 10px;
+  color: #fff;
+  border-color: red;
+}
+.caught{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-color: black;
+}
