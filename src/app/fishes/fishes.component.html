@@ -1,6 +1,6 @@
 <h2>Pesci pescati</h2>
 <ul class="fishes">
-  <li *ngFor="let fish of fishes">
+  <li *ngFor="let fish of fishes" [@flyInOut]="'in'">>
     <a routerLink="/detail/{{fish.id}}">
       <img [src]="fish.img">
     </a>

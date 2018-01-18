@@ -10,6 +10,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { FishDetailComponent } from './fish-detail/fish-detail.component';
 import { AddFishComponent } from './add-fish/add-fish.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AddFishComponent } from './add-fish/add-fish.component';
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     ),
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [FishService],
   bootstrap: [AppComponent]
