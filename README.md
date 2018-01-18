@@ -1,27 +1,20 @@
-# FishBoat
+# Fish-boat
+### Project description
+Fish-boat allows you to store the fishes that you catch!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
+#### Add a new fish
+You can simply add a new fish by clicking the button and enter your prey's information, such as:
++ Breed
++ Weight
++ Height
 
-## Development server
+If the fish is in our DB, a photo of it will be displayed on the main page.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Modify a fish
+You can click your fishes to update and/or modify the fishes' information.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+-----
+### Authors
+**Michele Brescia**
+**Daniele Schiavolin**
+**Lorenzo Siciliano**
