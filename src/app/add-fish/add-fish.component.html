@@ -1,13 +1,30 @@
 <div>
+  <div>
   <label>Razza:
-    <input #fishBreed />
+    <select #fishBreed>
+        <option value="Anguilla">Anguilla</option>
+        <option value="Carpa">Carpa</option>
+        <option value="Luccio">Luccio</option>
+        <option value="Persico">Persico</option>
+        <option value="Pesce gatto">Pesce gatto</option>
+        <option value="Piranha">Piranha</option>
+        <option value="Spigola">Spigola</option>
+        <option value="Storione">Storione</option>
+        <option value="Trota">Trota</option>
+        <option value="Magikarp">Magikarp</option>
+    </select>
   </label>
-  <label>Peso:
-    <input #fishWeight />
+  </div>
+  <div>
+  <label>Peso in kg:
+    <input #fishWeight type="number"/>
   </label>
-  <label>Lunghezza:
-    <input #fishLength />
+  </div>
+  <div>
+  <label>Lunghezza in cm:
+    <input #fishLength type="number"/>
   </label>
+  </div>
   <button (click)="add(fishBreed.value,fishWeight.value,fishLength.value); fishBreed.value='';fishWeight.value='';fishLength.value=''">
     Aggiungi
   </button>
