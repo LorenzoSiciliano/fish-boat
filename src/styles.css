@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: #288DE6;
+  background-color: white;
+  margin: 0 0 0 0;
 }
 ul {
   list-style-type: none;

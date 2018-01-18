@@ -5,3 +5,21 @@
 .fish-detail input {
   margin-top: 5px;
 }
+.details{
+  color: #288DE6;
+}
+.save{
+  margin-top: 20px;
+  background-color: white;
+  width: 60px;
+  height: 40px;
+  border-radius: 10px 10px 10px 10px;
+  color: #000;
+  border-color: blue;
+}
+.text{
+  color: #288DE6;
+}
+.box{
+  margin-bottom: 10px;
+}
