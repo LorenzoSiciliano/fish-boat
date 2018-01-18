@@ -23,8 +23,9 @@ export class AddFishComponent implements OnInit {
   }
 
   add(breed: string,weight: string,length: string): void {
-    if (!name || !weight || !length) { return; }
-    this.fishService.addFish({ breed, weight, length } as Fish)
+    if (!breed || !weight || !length) { return; }
+    let img = "assets/img/"+breed+".png";
+    this.fishService.addFish({ breed, weight, length, img } as Fish)
     .subscribe(() => this.goBack());
   };
 }
