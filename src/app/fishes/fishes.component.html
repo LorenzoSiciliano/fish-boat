@@ -1,15 +1,17 @@
-<h2>Pesci pescati</h2>
-<ul class="fishes">
-  <li *ngFor="let fish of fishes" [@flyInOut]="'in'">
-    <a routerLink="/detail/{{fish.id}}">
-      <img [src]="fish.img"  width="{{fish.length+0}}" height="auto">
-    </a>
-    <button class="delete" title="delete fish"
-    (click)="delete(fish)">x</button>
-  </li>
-</ul>
+<h2 class="caught">Pesci pescati</h2>
 <a routerLink="/addFish">
   <button>
     Aggiungi un pesce
   </button>
 </a>
+<ul class="fishes">
+  <li *ngFor="let fish of fishes" [@flyInOut]="'in'">
+    <a routerLink="/detail/{{fish.id}}">
+      <img [src]="fish.img"  width="{{fish.length+0}}" height="auto">
+    </a>
+    <div class="pos">
+      <button class="delete" title="delete fish"
+      (click)="delete(fish)">x</button>
+   </div>
+  </li>
+</ul>

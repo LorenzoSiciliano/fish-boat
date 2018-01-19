@@ -1,8 +1,8 @@
 <div *ngIf="fish">
-  <h2>Dettagli {{fish.breed}}</h2>
+  <h2 class="details">Dettagli {{fish.breed}}</h2>
   <div class="fish-detail">
-    <label>Razza:
-      <select [(ngModel)]="fish.breed">
+    <label class="text">Razza:<br>
+      <select class="box" [(ngModel)]="fish.breed">
           <option value="Anguilla">Anguilla</option>
           <option value="Carpa">Carpa</option>
           <option value="Luccio">Luccio</option>
@@ -17,14 +17,14 @@
     </label>
   </div>
   <div class="fish-detail">
-    <label>Peso in kg:
-      <input #fishWeight value="{{fish.weight}}" type="number" min="1" max="50"/>
+    <label class="text">Peso in kg:<br>
+      <input class="box" #fishWeight value="{{fish.weight}}" type="number" min="1" max="50"/>
     </label>
   </div>
   <div class="fish-detail">
-    <label>Lunghezza in cm:
-      <input #fishLength value="{{fish.length}}" type="number" min="1" max="100"/>
+    <label class="text">Lunghezza in cm:<br>
+      <input class="box" #fishLength value="{{fish.length}}" type="number" min="1" max="100"/>
     </label>
   </div>
-  <button (click)="save(fishWeight.value,fishLength.value)">Salva</button>
+  <button class="save" (click)="save(fishWeight.value,fishLength.value)">Salva</button>
 </div>
