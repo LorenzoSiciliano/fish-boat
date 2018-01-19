@@ -1,4 +1,10 @@
 <h2 class="caught">Pesci pescati</h2>
+<a routerLink="/addFish">
+  <button class="add">
+    Aggiungi un pesce
+  </button>
+</a>
+
 <ul class="fishes">
   <li *ngFor="let fish of fishes">
     <a routerLink="/detail/{{fish.id}}">
@@ -10,8 +16,3 @@
    </div>
   </li>
 </ul>
-<a routerLink="/addFish">
-  <button class="add">
-    Aggiungi un pesce
-  </button>
-</a>
