@@ -22,7 +22,7 @@
 
         <div class="items">
           <img src="{{ item.name }}" class="carouselFish">
-          <div>{{item.breed}}</div>
+          <div class="information">{{item.breed}}</div>
         </div>
 
     </ng-template>
@@ -30,7 +30,7 @@
   <div class="box">
   <label>Razza:
     <br>
-    <select #fishBreed>
+    <select class="text" #fishBreed>
         <option value="Anguilla">Anguilla</option>
         <option value="Carpa">Carpa</option>
         <option value="Luccio">Luccio</option>
@@ -48,14 +48,14 @@
   <div class="box">
   <label>Peso (Kg):
     <br>
-    <input #fishWeight type="number" type="number" min="1" max="50"/>
+    <input class="text" #fishWeight type="number" type="number" min="1" max="50"/>
   </label>
   </div>
   <br>
   <div class="box">
   <label>Lunghezza (Cm):
     <br>
-    <input #fishLength type="number" type="number" min="1" max="100"/>
+    <input class="text" #fishLength type="number" type="number" min="1" max="100"/>
   </label>
   </div>
   <button class="add" (click)="add(fishBreed.value,fishWeight.value,fishLength.value); fishBreed.value='';fishWeight.value='';fishLength.value=''">

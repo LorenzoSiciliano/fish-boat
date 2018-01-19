@@ -46,6 +46,8 @@
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
     "tslint": "~5.9.1",
-    "typescript": "~2.5.3"
+    "typescript": "~2.5.3",
+    "angular-in-memory-web-api": "^0.5.2",
+    "ng2-carouselamos": "^3.2.0"
   }
 }

@@ -28,7 +28,8 @@
   margin-bottom: 50px;
   margin-left: 10px;
   cursor: pointer;
-    transition: 0.5s;
+  transition: 0.5s;
+  font-size: 20px;
 }
 .add:hover {
   background-color: blue;
