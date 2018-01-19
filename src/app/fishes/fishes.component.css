@@ -10,6 +10,8 @@
   color: #fff;
   border-color: red;
   position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .caught {
@@ -25,10 +27,17 @@
   border-color: blue;
   margin-bottom: 50px;
   margin-left: 10px;
+  cursor: pointer;
+    transition: 0.5s;
+}
+.add:hover {
+  background-color: blue;
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+  border-color: blue;
+  cursor: pointer;
 }
 
 .pos {
   position: relative;
-  bottom: 150px;
-  left: 600px;
 }

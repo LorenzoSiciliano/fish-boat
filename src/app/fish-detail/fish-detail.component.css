@@ -22,6 +22,7 @@
   color: #000;
   border-color: blue;
   margin-left: 10px;
+  cursor: pointer;
 }
 .text{
   margin-left: 10px;
