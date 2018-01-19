@@ -31,8 +31,10 @@ export class FishDetailComponent implements OnInit {
     this.location.back();
   }
 
-  save(): void {
+  save(weight: string, length: string): void {
     this.fish.img = "assets/img/"+this.fish.breed+".png";
+    this.fish.length = length;
+    this.fish.weight = weight;
     this.fishService.updateFish(this.fish)
      .subscribe(() => this.goBack());
  }

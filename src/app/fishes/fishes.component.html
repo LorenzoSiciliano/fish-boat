@@ -2,7 +2,7 @@
 <ul class="fishes">
   <li *ngFor="let fish of fishes" [@flyInOut]="'in'">
     <a routerLink="/detail/{{fish.id}}">
-      <img [src]="fish.img">
+      <img [src]="fish.img"  width="{{fish.length+0}}" height="auto">
     </a>
     <button class="delete" title="delete fish"
     (click)="delete(fish)">x</button>

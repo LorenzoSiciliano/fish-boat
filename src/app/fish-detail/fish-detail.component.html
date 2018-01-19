@@ -2,18 +2,29 @@
   <h2>Dettagli {{fish.breed}}</h2>
   <div class="fish-detail">
     <label>Razza:
-      <input [(ngModel)]="fish.breed" placeholder="breed"/>
+      <select [(ngModel)]="fish.breed">
+          <option value="Anguilla">Anguilla</option>
+          <option value="Carpa">Carpa</option>
+          <option value="Luccio">Luccio</option>
+          <option value="Persico">Persico</option>
+          <option value="Pesce gatto">Pesce gatto</option>
+          <option value="Piranha">Piranha</option>
+          <option value="Spigola">Spigola</option>
+          <option value="Storione">Storione</option>
+          <option value="Trota">Trota</option>
+          <option value="Magikarp">Magikarp</option>
+      </select>
     </label>
   </div>
   <div class="fish-detail">
-    <label>Peso:
-      <input [(ngModel)]="fish.weight" placeholder="weight"/>
+    <label>Peso in kg:
+      <input #fishWeight placeholder="{{fish.weight}}" type="number"/>
     </label>
   </div>
   <div class="fish-detail">
-    <label>Lunghezza:
-      <input [(ngModel)]="fish.length" placeholder="length"/>
+    <label>Lunghezza in cm:
+      <input #fishLength placeholder="{{fish.length}}" type="number"/>
     </label>
   </div>
-  <button (click)="save()">Salva</button>
+  <button (click)="save(fishWeight.value,fishLength.value)">Salva</button>
 </div>
