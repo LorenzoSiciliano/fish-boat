@@ -22,6 +22,15 @@
   margin-left: 10px;
   cursor: pointer;
   font-size: 20px;
+  transition: 0.5;
+
+}
+.save:hover {
+  background-color: blue;
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+  border-color: blue;
+  cursor: pointer;
 }
 .text{
   margin-left: 10px;
