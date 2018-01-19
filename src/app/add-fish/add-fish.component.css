@@ -26,8 +26,9 @@
 
 .box {
   margin-left: 10px;
-  color: #288DE6;
+  color: #fff;
   font-size: 20px;
+  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 0px black;
 }
 
 .carouselFish {
@@ -42,4 +43,6 @@
 .information{
   font-size: 20px;
   text-align: center;
+  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 0px black;
+  color: #fff;
 }
