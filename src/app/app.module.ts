@@ -11,6 +11,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { FishDetailComponent } from './fish-detail/fish-detail.component';
 import { AddFishComponent } from './add-fish/add-fish.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       InMemoryDataService, { dataEncapsulation: false }
     ),
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    Ng2CarouselamosModule
   ],
   providers: [FishService],
   bootstrap: [AppComponent]

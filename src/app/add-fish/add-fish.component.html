@@ -1,5 +1,33 @@
 <div>
   <div>
+    <div
+        ng2-carouselamos
+        class="slides-wrapper"
+        [items]="items"
+        [width]="300"
+        [$prev]="prev"
+        [$next]="next"
+        [$item]="item"
+      >
+      </div>
+
+
+    <ng-template #prev>
+      <img src="assets/img/left-arrow.png" id="left" />
+    </ng-template>
+    <ng-template #next>
+      <img src="assets/img/right-arrow.png" id="right" />
+    </ng-template>
+    <ng-template #item let-item let-i="index">
+
+        <div class="items">
+          <img src="{{ item.name }}" class="carouselFish">
+          <div>{{item.breed}}</div>
+        </div>
+
+    </ng-template>
+  </div>
+  <div>
   <label>Razza:
     <select #fishBreed>
         <option value="Anguilla">Anguilla</option>
@@ -17,12 +45,12 @@
   </div>
   <div>
   <label>Peso in kg:
-    <input #fishWeight type="number"/>
+    <input #fishWeight type="number" type="number" min="1" max="50"/>
   </label>
   </div>
   <div>
   <label>Lunghezza in cm:
-    <input #fishLength type="number"/>
+    <input #fishLength type="number" type="number" min="1" max="100"/>
   </label>
   </div>
   <button (click)="add(fishBreed.value,fishWeight.value,fishLength.value); fishBreed.value='';fishWeight.value='';fishLength.value=''">
