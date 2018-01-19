@@ -28,6 +28,7 @@
   cursor: pointer;
   transition: 0.5s;
   font-size: 20px;
+  margin-top: 40px;
 }
 .add:hover {
   background-color: blue;
