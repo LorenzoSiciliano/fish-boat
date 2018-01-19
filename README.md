@@ -6,7 +6,7 @@ Fish-boat allows you to store the fishes that you catch!
 You can simply add a new fish by clicking the button and enter your prey's information, such as:
 + Breed
 + Weight
-+ Height
++ Length
 
 If the fish is in our DB, a photo of it will be displayed on the main page.
 
