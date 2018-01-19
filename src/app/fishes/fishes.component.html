@@ -4,8 +4,10 @@
     <a routerLink="/detail/{{fish.id}}">
       <img [src]="fish.img">
     </a>
-    <button class="delete" title="delete fish"
-    (click)="delete(fish)">x</button>
+    <div class="pos">
+      <button class="delete" title="delete fish"
+      (click)="delete(fish)">x</button>
+   </div>
   </li>
 </ul>
 <a routerLink="/addFish">

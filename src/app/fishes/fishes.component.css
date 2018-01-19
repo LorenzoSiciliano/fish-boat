@@ -5,6 +5,7 @@
   border-radius: 10px 10px 10px 10px;
   color: #fff;
   border-color: red;
+  position: absolute;
 }
 .caught{
     color: white;
@@ -18,4 +19,9 @@
   color: #000;
   border-color: blue;
   margin-bottom: 50px;
+}
+.pos{
+  position: relative;
+  bottom: 150px;
+  left: 600px;
 }
